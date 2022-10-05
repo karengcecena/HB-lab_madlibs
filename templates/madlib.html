@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlib</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
+</head>
+<body>
+<div>
+<h1>
+    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. 
+    When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way.
+
+    {% if words %}
+    You're a:
+    <ul>
+      {% for word in words %}
+        <li>{{ word }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  
+
+</h1>
+</div>
+</form>
+
+</body>
+</html>
